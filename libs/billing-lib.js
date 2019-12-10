@@ -1,4 +1,4 @@
-export function calculateCost(storage) {
+function calculateCost(storage) {
     const rate = storage <= 10
       ? 4
       : storage <= 100
@@ -6,3 +6,5 @@ export function calculateCost(storage) {
         : 1;
     return rate * storage * 100;
   }
+
+module.exports = calculateCost;
